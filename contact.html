@@ -39,48 +39,49 @@
     <body>
 
 
-        <header>
+      <header>
 
-            <!-----     This will be my nav bar-->
-            <div class="nav-bar grid-spaceBetween"> 
+        <!-----     This will be my nav bar-->
+        <div class="nav-bar grid padded-05"> 
 
-                <div class="col-2"> 
-                    <h2 class="logo">Logo</h2>
-                </div>
-                
-                
-            <div class="col-4 right">
-                <nav class="col-4 right">
-                    <a href="/index.html">Home</a>
-                    <a href="/appointments.html">Appointments</a>
-                    <a href="/contact.html">Contact</a>
-                </nav>
-
+            <div class="col-4 text-left"> 
+                <h2 class="logo">Alen Pikon</h2>
             </div>
+            
+            
+        <div class="col-8-middle">
+            <nav class="col-4 text-right uppercase">
+                <a href="/index.html">Home</a>
+                <a href="/appointments.html">Appointments</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
 
-                    
-            </div>
-        </header>
+        </div>
+
+                
+        </div>
+    </header>
 
 
         <!--  This will be some text before the contact form-->
 
 
-        <section class="grid-spaceAround center">
+        <section class="grid-spaceAround text-center padded ">
           <div class="col-8">
-            <h2> Get In Touch </h2>
+            <h3> Get In Touch </h3>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p> <strong> Email: </strong> hello@company.com </p>
             <p> <strong> Phone: </strong> 0412 555 555 </p>
-            <p> <strong> Facebook: </strong> fb.com/companyname </p>
           </div>
 
-          <div class="col-6-middle padded">
+          <div class="col-6 grid-spaceAround">
+
+          <div class="col-12-middle padded contact-form">
             <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
-              <div class="col-6_sm-12">
+              <div class="col-12">
                 <input type="text" name="name" placeholder="Your Name">
               </div>
-              <div class="col-6_sm-12">
+              <div class="col-12">
                 <input type="email" name="_replyto" placeholder="Your Email">
               </div>
               <div class="col-12">
@@ -93,6 +94,7 @@
               </div>
             </form>
           </div>
+        </div>
         </section>
 
        
@@ -104,33 +106,32 @@
 
 
 
-    <footer class="grid">
-        <!-- column -->
-        <div class="col-5">
-          <h2 class="logo"> Logo </h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
-        <div class="col-1"></div>
-        <!-- column -->
-        <div class="col-6 right">
-          <nav class="inline">
-            <a href="#"> Lorem ipsum </a>|
-            <a href="#"> Dolor sit </a>|
-            <a href="#"> Consectetur </a>
-          </nav>
-          <nav class="inline socials">
-            <a href="#">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </nav>
-        </div>
-      </footer>
+        <footer class="grid bg-dark">
+          <!-- column -->
+          <div class="col-5_sm-12 padded">
+            <h2 class="logo"> Alen Pikon </h2>
+            <p> Saunamaster for healthy infusions</p>
+          </div>
+          <div class="col-1"></div>
+          <!-- column -->
+          <div class="col-6_sm-12-middle padded text-right">
+            <nav class="inline">
+              <a href="/appointments.html"> Appointments </a>|
+              <a href="/contact.html"> Contact </a>
+            </nav>
+            <nav class="inline socials">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </nav>
+          </div>
+        </footer>
 
 
       
