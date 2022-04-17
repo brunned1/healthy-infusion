@@ -10,6 +10,15 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!----          Noto Sans               -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+        <!--------      Cormorant Garamond      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
         <!----------    Gridlex             -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
@@ -26,15 +35,15 @@
         <header>
 
             <!-----     This will be my nav bar-->
-            <div class="nav-bar grid-spaceBetween"> 
+            <div class="nav-bar grid padded-05"> 
 
-                <div class="col-2"> 
-                    <h2 class="logo">Logo</h2>
+                <div class="col-4 text-left"> 
+                    <h2 class="logo">Alen Pikon</h2>
                 </div>
                 
                 
-            <div class="col-4 right">
-                <nav class="col-4 right">
+            <div class="col-8-middle">
+                <nav class="col-4 text-right uppercase">
                     <a href="/index.html">Home</a>
                     <a href="/appointments.html">Appointments</a>
                     <a href="/contact.html">Contact</a>
@@ -46,88 +55,108 @@
             </div>
 
             <!----        This will be the first banner with a background img and 2 headings-->
-            <div class="background-img center">
-                <h1>Alen Pikon</h1>
-                <h3>Saunamaster for healthy infusions</h3>
+            <div class="grid bg-img header-img text-center tall-100">
+                <div class="overlay">
+                    <h1>Alen Pikon</h1>
+                    <h3>Saunamaster for healthy infusions</h3>
+                </div>
             </div>
         </header>
 
+          
+
         <!-----         This will be the first about section        -->
 
-        <section class="grid">
+        <section class="grid-spaceBetween tall-70 padded">
             <!-- Background Image-->
-            <div class="col-6 background-img"></div>
+            <div class="col-5 bg-image about-img"></div>
             <!-- About text-->
-            <div class="col-6">
-                <h3>About me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt assumenda laborum fuga enim ipsam et vero deleniti rerum, nisi ipsum temporibus, architecto nobis accusamus ut, illo saepe voluptatibus voluptatum? Placeat?</p>
+            <div class="col-6-middle padded text-center">
+                <h4>The Saunamaster</h4>
+                <h3>A unique experience for a special moment</h3>
+                <p>Every body is different, everyone should listen to their body, every day is different and the daily condition is not always the same. It is also important not to look at the clock during the infusion. Always take care of your well-being. The sauna chamber door is always open! You should have a sauna all year round, even in summer! I have sworn by the health-promoting effects of the sauna for 20 years.</p>
+
+                <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
             </div>
         </section>
 
-        <!--            This will be the appointments section       -->
+         <!--            This will be the appointments section       -->
 
-        <section class="grid-spaceAround center">
+         <section class="grid-spaceAround-middle text-center tall-20 padded-2 bg-dark">
             
-            <div class="col-12">
-                <h2> Next appointments</h2>
+            <div class="col-12 margin-b-2">
+                <h4> Next appointments</h4>
              </div>
           
 
             <!---       The next appointments   -->
+            <div class="col-12 grid-spaceAround-middle padded">
             <div class="col-3">
-               <p class="big-text"> Hotel X</p>
-               <p class="date"> 07.12 - 10.12</p>
+               <p class="big-text"> Hotel Hochschober</p>
+               <p class="date"> from 07.12.2022 - 10.12.2022</p>
             </div>
 
             <div class="col-3">
-                <p class="big-text"> Hotel X</p>
-                <p class="date"> 07.12 - 10.12</p>
+                <p class="big-text"> Schlosshotel Velden</p>
+                <p class="date"> from 11.12.2022 - 14.12.2022</p>
              </div>
 
              <div class="col-3">
-                <p class="big-text"> Hotel X</p>
-                <p class="date"> 07.12 - 10.12</p>
+                <p class="big-text"> Hotel Regittnig</p>
+                <p class="date"> 22.12.2022 - 27.12.2022</p>
              </div>
+            </div>
 
              <!---      Show more appointments button           -->
 
-             <div class="col-12 right">
+             <div class="col-12 text-right">
                  <a href="/appointments.html">
-                     All appointments -->
+                     All appointments <span class="arrow">&#10230;</span>
                  </a>
              </div>
         </section>
+
+     
 
 
              <!--         Services Section-->
 
 
-        <section class="grid center">
+        <section class="grid text-center  padded-2 tall-60">
+
+
+
+            <div class="col-8 grid">
     
-            <div class="col-12">
-            <h2> My Services</h2>
-            </div>
+                <div class="col-12">
+                <h3> My Services</h3>
+                </div>
+
+    
+                <div class="col-5 services">
+                    <p class="course-show">Courses <span class="arrow">&#10230;</span></p>
+                    <p>Sauna <span class="arrow">&#10230;</span></p>
+                    <p>Replacements <span class="arrow">&#10230;</span></p>
+                    <p>Sauna Oils <span class="arrow">&#10230;</span></p>
+                </div>
+                <div class="col-6 padded-05 ">
+                    <p>Learning different weaving techniques</p>
         
+                    <ul class="margin-b-1">
+                        <li>Weaving Technique 1</li>
+                        <li>Weaving Technique 2</li>
+                        <li>Weaving Technique 3</li>
+                        <li>Weaving Technique 4</li>
+                    </ul>
+                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
+              
 
-            <div class="col-3">
-                <p class="icon"><i class="social-icon fa-brands fa-pinterest-p"></i></p>
-                <p> This is what i offer</p>
-            </div>
+                
+                </div>
 
-            <div class="col-3">
-                <p class="icon"><i class="social-icon fa-brands fa-pinterest-p"></i></p>
-                <p> This is what i offer</p>
             </div>
+            <div class="col-4 bg-image services-img"></div>
 
-            <div class="col-3">
-                <p class="icon"><i class="social-icon fa-brands fa-pinterest-p"></i></p>
-                <p> This is what i offer</p>
-            </div>
-
-            <div class="col-3">
-                <p class="icon"><i class="social-icon fa-brands fa-pinterest-p"></i></p>
-                <p> This is what i offer</p>
-            </div>
 
 
         </section>
@@ -135,62 +164,62 @@
 
         <!--            This will be the featured section       -->
 
-        <section class="grid-spaceAround center">
-    
-        <div class="col-12">
-            <h2> I already worked for</h2>
-            </div>
-        
+        <section class="grid-spaceAround-middle text-center tall-20 padded-2 bg-dark">
+            
+            <div class="col-12 margin-b-2">
+                <h4> Past Collaborations</h4>
+             </div>
+          
 
-        <!---       Hotels I already worked for   -->
-        <div class="col-3">
-            <p class="big-text"> Hotel X</p>
-            <p class="date"> 07.12 - 10.12</p>
-        </div>
-
-        <div class="col-3">
-            <p class="big-text"> Hotel X</p>
-            <p class="date"> 07.12 - 10.12</p>
+            <!---       The next appointments   -->
+            <div class="col-12 grid-spaceAround-middle padded">
+            <div class="col-3">
+               <p class="big-text"> Hotel Hochschober</p>
+               <p class="date"> from 07.12.2022 - 10.12.2022</p>
             </div>
 
             <div class="col-3">
-            <p class="big-text"> Hotel X</p>
-            <p class="date"> 07.12 - 10.12</p>
+                <p class="big-text"> Schlosshotel Velden</p>
+                <p class="date"> from 11.12.2022 - 14.12.2022</p>
+             </div>
+
+             <div class="col-3">
+                <p class="big-text"> Hotel Regittnig</p>
+                <p class="date"> 22.12.2022 - 27.12.2022</p>
+             </div>
             </div>
 
-            <!---      Show more appointments button           -->
+             <!---      Show more appointments button           -->
+
+        </section>
 
 
-    </section>
-
-
-    <footer class="grid">
-        <!-- column -->
-        <div class="col-5">
-          <h2 class="logo"> Logo </h2>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
-        <div class="col-1"></div>
-        <!-- column -->
-        <div class="col-6 right">
-          <nav class="inline">
-            <a href="#"> Lorem ipsum </a>|
-            <a href="#"> Dolor sit </a>|
-            <a href="#"> Consectetur </a>
-          </nav>
-          <nav class="inline socials">
-            <a href="#">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </nav>
-        </div>
-      </footer>
+        <footer class="grid">
+            <!-- column -->
+            <div class="col-5_sm-12 padded">
+              <h2 class="logo"> Alen Pikon </h2>
+              <p> Saunamaster for healthy infusions</p>
+            </div>
+            <div class="col-1"></div>
+            <!-- column -->
+            <div class="col-6_sm-12-middle padded text-right">
+              <nav class="inline">
+                <a href="/appointments.html"> Appointments </a>|
+                <a href="/contact.html"> Contact </a>
+              </nav>
+              <nav class="inline socials">
+                <a href="#">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </nav>
+            </div>
+          </footer>
 
 
       
