@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+div {
+    border: 1px solid grey;
+}
+
+
+
+
+/* Utility Classes          */
+
+.center     {   text-align: center;}
+.right      {   text-align: right ;}
+
+
+.inline {
+    display: inline;
+}
+
+
+.tall-50     {   min-height: 50vh;}
+.tall-60     {   min-height: 60vh;}
+.tall-70     {   min-height: 70vh;}
+.tall-80     {   min-height: 80vh;}
+.tall-90     {   min-height: 90vh;}
+.tall-100     {   min-height: 100vh;}
+
+
+
+
+
