@@ -5,7 +5,8 @@
     <head>
         <title>Alen Pikon</title>
 
-
+        <!---           For mobile browsers -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--------      Font Aweseome           -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -66,15 +67,15 @@
         <!--  This will be some text before the contact form-->
 
 
-        <section class="grid-spaceAround text-center padded ">
-          <div class="col-8">
+        <section class="grid-spaceAround text-center padded xs-margin-t-2 md-margin-t-1 ">
+          <div class="col-8_md-10">
             <h3> Get In Touch </h3>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p> <strong> Email: </strong> hello@company.com </p>
             <p> <strong> Phone: </strong> 0412 555 555 </p>
           </div>
 
-          <div class="col-6 grid-spaceAround">
+          <div class="col-6_md-8 grid-spaceAround">
 
           <div class="col-12-middle padded contact-form">
             <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
@@ -106,13 +107,13 @@
 
 
 
-        <footer class="grid bg-dark">
+        <footer class="grid">
           <!-- column -->
           <div class="col-5_sm-12 padded">
             <h2 class="logo"> Alen Pikon </h2>
             <p> Saunamaster for healthy infusions</p>
           </div>
-          <div class="col-1"></div>
+          <div class="col-1 sm-hidden"></div>
           <!-- column -->
           <div class="col-6_sm-12-middle padded text-right">
             <nav class="inline">

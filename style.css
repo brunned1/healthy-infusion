@@ -322,7 +322,7 @@ p:last-child {
   
   .month ul li {
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 3px;
   }
@@ -386,4 +386,77 @@ p:last-child {
     text-align: center;
     border-bottom: 1px solid;
 
+}
+
+
+/* Mobile Styles */
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+
+  .md-margin-t-1 { margin-top: 5%;}
+  .md-margin-t-2 { margin-top: 10%;}
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+  .show-sm { display: block; }
+  .hide-sm { display: none;  }
+	 
+  .sm-text-center { text-align: center; }
+  .sm-text-left { text-align: left; }
+  .sm-text-right { text-align: right; }
+
+  .sm-padded { padding: 5%; }
+  .sm-padded-1 { padding: 1rem; }
+  .sm-padded-05 { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-l-0 { margin-left: 0; }
+  .sm-margin-r-0 { margin-right: 0; }
+
+  .sm-margin-t-1 { margin-top: 5%; }
+
+ html {
+   font-size: 12px;
+ }
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+  .show-xs { display: block; }
+  .hide-xs { display: none;  }
+
+  .xs-tall-40 {
+    min-height: 40vh;
+  }
+
+  .xs-margin-t-2 { margin-top: 10%;}
+  .xs-margin-t-1 { margin-top: 5%;}
+
+  html {
+    font-size: 10px;
+  }
 }
