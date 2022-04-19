@@ -9,6 +9,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+                        <!---           Jquery              -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+
         <!--------      Font Aweseome           -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -148,24 +156,50 @@
 
     
                 <div class="col-5 services">
-                    <p class="course-show">Schulungen <span class="arrow">&#10230;</span></p>
-                    <p>Saunaaufgüsse <span class="arrow">&#10230;</span></p>
-                    <p>Vertretungen <span class="arrow">&#10230;</span></p>
-                    <p>Sauna Öle <span class="arrow">&#10230;</span></p>
+                    <p  id="schulungen">Schulungen <span class="arrow">&#10230;</span></p>
+                    <p id="sauna">Saunaaufgüsse <span class="arrow">&#10230;</span></p>
+                    <p id="vertretungen">Vertretungen <span class="arrow">&#10230;</span></p>
+                    <p id="oele">Sauna Öle <span class="arrow">&#10230;</span></p>
                 </div>
-                <div class="col-6 padded-05 ">
-                    <p>Learning different weaving techniques</p>
+
+                <div id="schulungen_text" class="col-6 padded-05 hide">
+                    <h2>Durchführung von Schulungen</h2>
         
                     <ul class="margin-b-1">
-                        <li>Weaving Technique 1</li>
-                        <li>Weaving Technique 2</li>
-                        <li>Weaving Technique 3</li>
-                        <li>Weaving Technique 4</li>
+                        <li>Erlernen von verschiedenen Wedeltechniken</li>
                     </ul>
                     <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
-              
+                </div>
 
-                
+                <div id="sauna_text" class="col-6 padded-05 hide">
+                    <h2>Durchführung von verschiedenen Sauneaufgüssen:</h2>
+        
+                    <ul class="margin-b-1">
+                        <li>Entspannungsaufguss</li>
+                        <li>Klangschalenaufguss</li>
+                        <li>Showaufguss</li>
+                        <li>einzigartige Aufgüsse in der <strong>Zeltsauna</strong></li>
+                    </ul>
+                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
+                </div>
+
+                <div id="vertretungen_text" class="col-6 padded-05 hide">
+                    <h2>Vertretungen für:</h2>
+        
+                    <ul class="margin-b-1">
+                        <li>Krankenstände</li>
+                        <li>Urlaubsvertretung</li>
+                    </ul>
+                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
+                </div>
+
+                <div id="oele_text" class="col-6 padded-05 hide">
+                    <h2>Sauna Öle</h2>
+        
+                    <ul class="margin-b-1">
+                        <li>Leerer Text - Bitte ändern </li>
+                    </ul>
+                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
                 </div>
 
             </div>
@@ -240,6 +274,52 @@
 
 
 
+
+
+
+          <!----            Javascript for Services Section to Show the Services that is actually clicked on -->
+        <script>
+        $("#schulungen").click(function(){
+            $("#schulungen_text").addClass("show");
+        $("#sauna_text").removeClass("show");
+        $("#vertretungen_text").removeClass("show");
+        $("#oele_text").removeClass("show");
+          
+               
+        
+        });
+
+
+        $("#sauna").click(function(){
+            $("#schulungen_text").removeClass("show");
+          $("#sauna_text").addClass("show");
+        $("#vertretungen_text").removeClass("show");
+          $("#oele_text").removeClass("show");
+       
+        });
+
+
+ $("#vertretungen").click(function(){
+            $("#schulungen_text").removeClass("show");
+          $("#sauna_text").removeClass("show");
+        $("#vertretungen_text").addClass("show");
+          $("#oele_text").removeClass("show");
+       
+        });
+
+
+$("#oele").click(function(){
+            $("#schulungen_text").removeClass("show");
+          $("#sauna_text").removeClass("show");
+        $("#vertretungen_text").removeClass("show");
+          $("#oele_text").addClass("show");
+       
+        });
+
+
+
+
+        </script>
 
 
     </body>
