@@ -301,6 +301,11 @@ p:last-child {
 
   /* Appointments Page */
 
+  .border {
+    border: 10px solid white;
+  }
+
+  
   .appointments ul {
     list-style-type: none;
 }
