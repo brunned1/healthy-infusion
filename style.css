@@ -285,13 +285,23 @@ p:last-child {
     background-image: url(/images/healthy-infusion-3.jpg);
 }
 
+
+
+
+
 /* Services */
 
-.services p {
-    margin-bottom: 2rem;
+.services a {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
 }
 
-/* Services */
+
+.services p {
+  margin-bottom: 2rem;
+}
+
 
 .hide {
   display: none;
@@ -317,6 +327,72 @@ p:last-child {
     border: 10px solid white;
   }
 
+  /* Contact Page */
+
+  .contact-form {
+    width: 100%;
+  }
+
+
+  input, textarea {
+    border-style: solid;
+    border: none;
+    border-bottom: 2px solid rgb(200, 200, 205);
+  
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top;
+  }
+
+  textarea {
+    border: 2px solid rgb(200, 200, 205);
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    /* featured color */
+  }
+  
+  textarea {
+    min-height: 7em;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    display: block;
+  }
+  
+  form [class*=col-] {
+    padding: 5px;
+  }
+  
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+  
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  form .button {
+    width:100%;
+    border-bottom: none;
+    text-align: center;
+    background-color: transparent;
+  }
+    @media(max-width:768px) {
+     .email-signup input {
+       width: 100%;
+       max-width: 100%;
+     }
+   }
 
  
 
