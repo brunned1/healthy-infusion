@@ -547,7 +547,14 @@ footer nav a {
   .sm-margin-t-1 { margin-top: 5%; }
 
  html {
-   font-size: 12px;
+   font-size: 12px,
+ }
+
+ .services h4 {
+   margin-bottom: 1rem;
+ }
+ .services p {
+   margin-bottom: 3rem;
  }
 }
 
