@@ -9,9 +9,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-                        <!---           Jquery              -->
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!---           Jquery              -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+
+        <!---         Josefins Sans         -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
 
 
 
@@ -23,10 +30,11 @@
 
         <!----          Noto Sans               -->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
-        <!--------      Cormorant Garamond      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+       <!--------      Cormorant Garamond      -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -46,7 +54,7 @@
         <header>
 
             <!-----     This will be my nav bar-->
-            <div class="nav-bar grid padded-05"> 
+            <div class="nav-bar grid padded-1"> 
 
                 <div class="col-4 text-left"> 
                     <a href="/index.html"><h2 class="logo">Alen Pikon</h2></a>
@@ -54,8 +62,9 @@
                 
                 
             <div class="col-8-middle">
-                <nav class="col-4 text-right uppercase">
+                <nav class="col-4 text-right ">
                     <a href="/index.html">Home</a>
+                    <a href="/staatsmeisterschaft.html">Staatsmeisterschaft</a>
                     <a href="/appointments.html">Termine</a>
                     <a href="/contact.html">Kontakt</a>
                 </nav>
@@ -68,16 +77,19 @@
 
             <!---           News Section-->
 
-            <section class="padded text-center grid-middle md-margin-t-1 xs-margin-t-2">
+            <section class="padded text-center grid-middle md-margin-t-1 xs-margin-t-2 ">
                 <div class="col-12">
                     <h3>Aktuelle Neuigkeiten</h3>
                 </div>
-                <div class="col-8_md-10_xs-12 bg-dark margin-t-2 padded-lg">
+                <div class="col-9__xs-12 bg-dark margin-t-2 padded-1">
 
-                <h4 class="editable">11. Staatsmeisterschaften</h4>
-                <p class="date editable"> vom 11.04 - 15.04. 2022</p>
-                <p class="editable" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="/appointments.html" class="button">Zur Anmeldung <span class="arrow">&#10230;</span></a>
+                <h3 class="editable margin-b-0">11. Staatsmeisterschaften</h3>
+                <p class="date editable"> vom 05.08.2022 bis 07.08.2022 
+                </p>
+                <p class="editable" >Ich habe für die heurige Staatsmeisterschaft und Austria Trophy, die Alpentherme Gastein  in Bad Hofgastein in Salzburg ausgewählt. Nach einigen aktiven Wettkämpfen und zwei erlangten Staatsmeistertiteln, freue ich mich sehr auf diese neue Erfahrung. Ich hoffe auf zahlreiche Anmeldungen für die heurige Meisterschaft und freue mich auf eine tolle Veranstaltung mit euch. Gut Schwitz! 
+                </p>
+                <a href="/staatsmeisterschaft.html" class="block">Zur Anmeldung <span class="arrow">&#10230;</span></a>
+                <a href="/appointments.html" class="block">Zu allen Terminen <span class="arrow">&#10230;</span></a>
                 </div>
               </section>
 
@@ -87,38 +99,49 @@
 
         <!-----         This will be the first about section        -->
 
-        <section class="grid-spaceAround tall-70 padded xs-margin-t-2 md-margin-t-1">
+        <section class="grid-spaceAround tall-70 padded-05 xs-margin-t-2 md-margin-t-1">
             <!-- Background Image-->
-            <div class="col-3_md-4_xs-12 tall-50 bg-image about-img"></div>
+
+            <div class="col-3_md-3_xs-12">
+              <div class="col-12 tall-50 bg-image about-img border-r"></div>
+          </div>
             <!-- About text-->
-            <div class="col-6_xs-12-middle padded text-center xs-margin-t-1">
+            <div class="col-6_xs-12 padded text-center xs-margin-t-1">
                 <h4>DER SAUNAMEISTER </h4>
                 <h3>Ein Besonderes Erlebenis Für Einen Besonderen Moment</h3>
                 <p>Jeder Körper ist anders, jeder soll auf seinen Körper hören, jeder Tag ist anders und die Tagesverfassung ist auch nicht immer dieselbe. Wichtig ist auch beim Aufguss nicht auf die Uhr zu schauen. Immer auf sein Wohlbefinden achten. Die Saunakammertür ist immer offen! Saunieren sollte man das ganze Jahr, auch im Sommer! Ich schwöre seit 20 Jahren auf die gesundheitsfördernde Wirkung der Sauna. </p>
 
-                <a href="/contact.html" class="button"> Kontaktiere mich hier <span class="arrow">&#10230;</span></a>
+                <a  href="/contact.html" > Kontaktiere mich hier <span class="arrow">&#10230;</span></a>
+                
             </div>
         </section>
 
          <!--            This will be the appointments section       -->
 
-         <section class="grid-spaceAround-middle text-center tall-40 padded-2 bg-dark">
+         <section class="grid-spaceAround-middle text-center padded-1 margin-b-2">
             
-            <div class="col-12 margin-b-2">
-                <h2> Nächste Termine</h2>
+            <div class="col-12 margin-b-1">
+                <h4> Nächste Termine</h4>
              </div>
           
 
             <!---       The next appointments   -->
-            <div class="col-12 grid-spaceAround-middle padded">
+            <div class="col-12 grid-spaceAround-middle ">
             <div class="col-3">
                <p class="big-text editable"> Hotel Hochschober</p>
-               <p class="date editable"> from 07.12.2022 - 10.12.2022</p>
+               <p class="date editable">  07.12.2022 - 10.12.2022</p>
             </div>
 
             <div class="col-3">
+              <p class="big-text editable"> Strandhotel am Weißensee</p>
+              <p class="date editable">  07.12.2022 - 10.12.2022</p>
+           </div>
+
+            
+
+            <div class="col-3">
                 <p class="big-text editable"> Schlosshotel Velden</p>
-                <p class="date editable"> from 11.12.2022 - 14.12.2022</p>
+                <p class="date editable">  11.12.2022 - 14.12.2022</p>
              </div>
 
              <div class="col-3">
@@ -129,11 +152,41 @@
 
              <!---      Show more appointments button           -->
 
-             <div class="col-12 text-right margin-t-2">
-                 <a href="/appointments.html">
+             <div class="col-12 text-right margin-t-1">
+                 <h4><a href="/appointments.html">
                      Alle Termine <span class="arrow">&#10230;</span>
                  </a>
+                </h4>
              </div>
+        </section>
+
+        <!--        Video Section -->
+
+        <section class="grid-spaceAround padded-1 text-center">
+
+          <div class="col-12 text-center">
+            <h3>Für Körper und Seele</h3>
+          </div>
+
+          <div class="col-10 padded-1">
+
+                      <!---------- This will make the video autoplay ---------->
+                <video autoplay muted loop playsinline poster="/images/healthy-infusion-4.png">
+                  <source src="/videos/saunavideo.mp4" type="video/mp4">
+                  <p>Sorry, your browser doesn't support embedded videos</p> 
+                </video>
+ 
+
+
+          </div>
+
+
+
+
+
+
+
+
         </section>
 
      
@@ -142,118 +195,146 @@
              <!--         Services Section-->
 
 
-        <section class="grid text-center  padded-2 tall-60 xs-tall-40">
+        <section class="grid-spaceAround margin-t-1 padded services tall-60">
+          <div class="col-6 padded-05">
+            <p id="start_text" class="big-text ">
+              Als Saunameister für gesunde Aufgüsse ist es mir immer wieder eine große Ehre die Gäste mit meinen Aufgüssen zu verzaubern. Für den Körper und auch die Seele gibt es nichts besseres als einen Besuch in der Sauna.
+            </p>
+            <p id="schulungen_text" class="big-text hide">
+              In den letzten Jahren habe ich viel Erfahrung sammeln können und auch einiges dazu lernen dürfen. Nun möchte ich gerne mein Wissen an andere weitergeben. Durchführung von Schulungen, die Möglichkeit verschiedene Wedeltechniken zu erlernen und vieles mehr kann ich anbieten. 
+            </p>
+            <p id="sauna_text" class="big-text hide">
+              Durchführung jeglicher Art von Saunaaufgüssen und Sauna Ritualen wie z.B:
+              Entspannungs Aufguss
+              Klangschalen Aufguss
+              Show Aufguss
+              Wenik Aufguss
+              Chakra Aufguss 
+              Klangschalen Rituale
+              Dampfbad Rituale
+              uvm…
 
+            </p>
+            <p id="vertretungen_text" class="big-text hide">
+              Vertretungen für Krankenstände, Urlaubsvertretungen 
+            </p>
+            <p id="oele_text" class="big-text hide">
+              Sauna Öle von den Marken Wurzelstock, Leuli und Experience - store sind bei mir erhältlich.
+            </p>
+            <p  id="zeltsauna_text" class="big-text hide">
+              Ganz außergewöhnliche Aufgüsse zelebriere ich in meiner Original Finnischen Zeltsauna. Diese Sauna kann überall aufgestellt werden, ob im Garten, am See oder am Berg. Eingeheizt wird mit Buchenholz, liegen oder sitzen kann man auf der Wiese oder auf Bänken.
+            </p>
+            <a class="small-text" href="/contact.html" > Kontaktiere mich hier  <span class="arrow">&#10230;</span></a>
+          </div>
 
-
-            <div class="col-12_xs-12 grid-middle services tall-70">
-    
-                <div class="col-12 text-center">
-                <h3> Meine Serviceleistungen als Saunameister</h3>
-                </div>
-
-
-                <div class="col-2 bg-image services-img hide-xs tall-60 "></div>
-                
-                <div class="col-4 padded-t-2">
-                    <h2  id="schulungen">Schulungen <span class="arrow">&#10230;</span></h2>
-                    <h2 id="sauna">Saunaaufgüsse <span class="arrow">&#10230;</span></h2>
-                    <h2 id="vertretungen">Vertretungen <span class="arrow">&#10230;</span></h2>
-                  <h2 id="oele">Sauna Öle <span class="arrow">&#10230;</span></h2>
-                </div>
-
-                <div id="schulungen_text" class="col-6 padded-05 hide">
-        
-                    <p>Erlernen von verschiedenen Wedeltechniken</p>
-                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
-                </div>
-
-                <div id="sauna_text" class="col-6 padded-05 hide">
-
-        
-                    <p>Entspannungsaufguss, Klangschalenaufguss & Showaufguss <br>
-                      einzigartige Aufgüsse in der <strong>Zeltsauna</strong></p>
-                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
-                </div>
-
-                <div id="vertretungen_text" class="col-6 padded-05 hide">
-
-        
-                    <p>Krankenstände und Urlaubsvertretung</p>
-                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
-                </div>
-
-                <div id="oele_text" class="col-6 padded-05 hide">
-        
-                    <p>Verkauf von Saunaölen</p>
-                    <a href="/contact.html" class="button"> Book now <span class="arrow">&#10230;</span></a>
-                </div>
-
-                
-
-            </div>
-
-
-
-
+          <div class="col-3">
+            <p class="uppercase small-text">Meine Services</p>
+            <p id="schulungen" class="medium-text">Schulungen</p>
+            <p id="sauna" class="medium-text">Saunaaufgüsse und Sauna Rituale</p>
+            <p id="vertretungen" class="medium-text">Vertretungen</p>
+            <p id="oele" class="medium-text">Sauna öle</p>
+            <p id="zeltsauna" class="medium-text">Zeltsauna</p>
+          </div>
         </section>
 
 
-        <!--            This will be the featured section       -->
 
-        <section class="grid-spaceAround-middle text-center tall-40 padded bg-dark">
+
+
+        <!---     Meine Partnerhotels               ----->
+        <section class="grid-spaceAround-middle text-center  padded-1">
             
-            <div class="col-12">
-                <h2> Meine Hotelpartner</h2>
-             </div>
+          <div class="col-12 margin-b-2">
+              <h4> Meine Hotelpartner</h4>
+           </div>
+        
+
+          <!---      My partners ---->
+          <div class="col-12 grid-spaceAround-middle ">
+          <div class="col-2">
+             <p class="big-text editable"> Hotel <br>Hochschober</p>
+
+          </div>
+
+          <div class="col-2">
+            <p class="big-text editable"> Strandhotel am Weißensee</p>
+
+         </div>
+
           
 
-            <!---       Partner Hotels   -->
-            <div class="col-12 grid-spaceAround-middle padded">
-            <div class="col-3">
-               <p class="big-text"> Hotel Hochschober</p>
-            </div>
+          <div class="col-2">
+              <p class="big-text editable"> Schlosshotel <br>Velden</p>
 
-            <div class="col-3">
-                <p class="big-text"> Schlosshotel Velden</p>
-             </div>
+           </div>
 
-             <div class="col-3">
-                <p class="big-text"> Hotel Regittnig</p>
-             </div>
-            </div>
+           <div class="col-2">
+              <p class="big-text editable"> Hotel <br>Regittnig</p>
 
-             <!---      Show more appointments button           -->
+           </div>
+           <div class="col-2">
+            <p class="big-text editable"> der <br>Kirchheimerhof</p>
 
-        </section>
-
-
-        <footer class="grid">
-          <!-- column -->
-          <div class="col-5 padded">
-            <h2 class="logo"> Alen Pikon </h2>
-            <p> Ihr Saunameister für gesunde Aufgüsse</p>
+         </div>
           </div>
-          <div class="col-1 sm-hidden"></div>
-          <!-- column -->
-          <div class="col-6_-middle padded text-right">
-            <nav class="inline">
-              <a href="/appointments.html"> Termine </a>|
-              <a href="/contact.html"> Kontakt </a>
-            </nav>
-            <nav class="inline socials">
-              <a href="#">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
+      </section>
+
+
+      <footer class="grid padded-1 margin-t-2">
+        <!-- column -->
+        <div class="col-3_sm-12">
+          <h2 class="logo"> Alen Pikon </h2>
+          <p> Ihr Saunsmeister für gesunde Aufgüsse </p>
+        </div>
+        <div class="col-1 sm-hidden"> <!-- empty filler --> </div>
+      
+        <!-- column -->
+        <div class="col-3_sm-4_xs-12 padded-1 text-center">
+          <h4 class="caps"> Kontakt </h4>
+          <nav>
+            <a href="tel:436764241464"> +43 676 4241464</a>
+            <a href="mailto:gesunderaufguss@aon.at"> gesunderaufguss@aon.at </a>
+            <a href="/contact.html"> Kontaktiere mich hier </a>
+
+          </nav>
+        </div>
+      
+        <!-- column -->
+        <div class="col-3_sm-4_xs-12 padded-1 text-center">
+          <h4 class="caps"> Zertifikate </h4>
+          <nav>
+            <a href="#"> Badewart </a>
+            <a href="#"> Zertifikat & Kurse </a>
+            <a href="#"> Bewerbung & Erfolge </a>
+            <a href="#"> Visitenkarte </a>
+          </nav>
+        </div>
+      
+        <!-- column -->
+        <div class="col-2_sm-4_xs-12 padded-1 text-center">
+          <h4 class="caps"> Finde mich </h4>
+          <nav>
+            <a href="#"> Facebook </a>
+            <a href="#"> Instagram </a>
+            <a href="#"> Youtube </a>
+          </nav>
+        </div>
+
+        <div class="col-12-spaceApart grid ">
+          <div class="col-6">
+            <p>Alen Pikon © 2022. Alle Rechte vorbehalten.</p>
+          </div>
+          <div class="col-6 text-right">
+            <nav>
+              <a class="margin-r-1 inline" href="#"> Datenschutz </a>
+              <a class="margin-r-1 inline" href="#"> Impressum </a>
             </nav>
           </div>
-        </footer>
+
+          </div>
+
+        
+      </footer>
 
       
 
@@ -269,6 +350,8 @@
         $("#sauna_text").removeClass("show");
         $("#vertretungen_text").removeClass("show");
         $("#oele_text").removeClass("show");
+        $("#start_text").addClass("hide");
+        $("#zeltsauna_text").removeClass("show");
           
                
         
@@ -280,7 +363,8 @@
           $("#sauna_text").addClass("show");
         $("#vertretungen_text").removeClass("show");
           $("#oele_text").removeClass("show");
-       
+          $("#start_text").addClass("hide");
+          $("#zeltsauna_text").removeClass("show");
         });
 
 
@@ -289,7 +373,8 @@
           $("#sauna_text").removeClass("show");
         $("#vertretungen_text").addClass("show");
           $("#oele_text").removeClass("show");
-       
+          $("#start_text").addClass("hide");
+          $("#zeltsauna_text").removeClass("show");
         });
 
 
@@ -298,7 +383,18 @@ $("#oele").click(function(){
           $("#sauna_text").removeClass("show");
         $("#vertretungen_text").removeClass("show");
           $("#oele_text").addClass("show");
+          $("#start_text").addClass("hide");
+          $("#zeltsauna_text").removeClass("show");
        
+        });
+
+        $("#zeltsauna").click(function(){
+            $("#schulungen_text").removeClass("show");
+          $("#sauna_text").removeClass("show");
+        $("#vertretungen_text").removeClass("show");
+          $("#oele_text").removeClass("show");
+          $("#start_text").addClass("hide");
+          $("#zeltsauna_text").addClass("show");
         });
 
 

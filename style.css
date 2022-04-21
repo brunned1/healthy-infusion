@@ -30,8 +30,11 @@ img { max-width: 100%; }
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333d29;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 1.15rem;
+  background-color: #FDF9F5;
+
 }
 
 h2, h3, h4, h5, h6 {
@@ -51,14 +54,16 @@ h1 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
     margin-bottom: 3rem;
 }
 
 h4 {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     line-height: 0.8;
+    text-transform: uppercase;
 }
 
 p {
@@ -68,6 +73,7 @@ p {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
     color: inherit;
 }
 
@@ -84,21 +90,27 @@ a:hover {
     color: #a4ac86;
 }
 
-.button {
-    font-size: 1.4rem;
-    font-weight: 300;
+.arrow {
+  font-size: 1rem;
 }
+
 
 
 .date {
-    font-size: 1rem;
+
+    font-size: 1.15rem;
     font-weight: 300;
 }
+
+
+
 .big-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.4;
     margin-bottom: 0;
 }
+
+
 
 h2:last-child, 
 h3:last-child, 
@@ -114,6 +126,7 @@ p:last-child {
 /* Height Utility Classes */
 
 .tall-20     {   min-height: 20vh;}
+.tall-25     {   min-height: 25vh;}
 .tall-30     {   min-height: 30vh;}
 .tall-40     {   min-height: 40vh;}
 .tall-50     {   min-height: 50vh;}
@@ -132,6 +145,7 @@ p:last-child {
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem; }
 .padded-2  { padding: 2rem; }
+.padded-3  { padding: 3rem; }
 
 .padded-t  { padding-top: 5%; }
 .padded-b  { padding-bottom: 5%; }
@@ -186,10 +200,12 @@ p:last-child {
 
 /* Background Styles */
 
-.bg-dark { 
-    background-color: #333d29; 
-    color: white;
+.bg-dark {
+  border: 1px solid black; 
   }
+.bg-white {
+  background-color: white;
+}
   
   .bg-featured { background-color: lightblue; }
   .bg-light { background-color: rgb(245,245,245); }
@@ -215,9 +231,7 @@ p:last-child {
   .bg-pos-l { background-position: left; }
   .bg-pos-r { background-position: right; }
 
-  .border {
-      border: 1px solid;
-  }
+
 
 
 
@@ -234,15 +248,12 @@ p:last-child {
         position: absolute;
         top: 0;
         width: 100vw;
-        background-color: white;
+
+        background-color: transparent;
         opacity: 80%;
+        font-family: 'Cormorant Garamond', serif;
     
         z-index: 3;
-    }
-
-    header h3 {
-        font-size: 2rem;
-        font-weight: 300;
     }
 
     header h4 {
@@ -253,26 +264,32 @@ p:last-child {
       margin-bottom: 2rem;
     }
 
+    .block {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .border-r {
+      border-radius: 5px;
+    }
+
+    .border-bottom {
+      border-bottom: 1px solid;
+    }
+
     .nav-bar nav a {
         margin-right: 2.5%;
         font-size: 1.2rem;
+        text-transform: none;
     }
 
 
+    .nav-bar nav a:last-child {
+      margin-right: 0;
+  }
 
-    .overlay {
-        position:absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.212);
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+
+
 
 
 /* Images */
@@ -287,17 +304,24 @@ p:last-child {
 }
 
 .services-img {
-    background-image: url(/images/healthy-infusion-3.jpg);
+    background-image: url(/images/test.png);
 }
 
+/* Youtube Video */
 
-
+video {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  pointer-events: none;
+}
 
 
 /* Services */
 
 .services h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
   margin-bottom: 1.2rem;
   cursor: pointer;
 }
@@ -306,12 +330,31 @@ p:last-child {
   color: #a4ac86;
 }
 
-
-.services h3 {
-  font-size: 1.6rem;
-  font-family: 'Open Sans', sans-serif;
+.services .big-text {
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
 }
 
+
+.services .small-text {
+  font-size: 0.9rem;
+}
+
+.medium-text {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+
+.border-lr {
+  border-right: 2rem solid transparent;
+  border-left: 2rem solid transparent;
+  
+}
+
+.no-border {
+  border: none;
+}
 
 .hide {
   display: none;
@@ -321,21 +364,39 @@ p:last-child {
   display: block;
 }
 
+/* Hotelpartner */
+
+
+
 /* Footer */
 
-.inline a {
-    display:inline-block;
-    padding: 0.5rem;
+footer nav a {
+  display:block;
+  font-size: 0.9rem;
+}
+
+ footer {
+   font-size: 1rem;
+ }
+  footer h2 {
+    margin-bottom: 0;
   }
+
+  footer h4 {
+    margin-bottom: 1rem;
+  }
+
+  .inline {
+    display: inline;
+  }
+
 
 
 
 
   /* Appointments Page */
 
-  .border {
-    border: 10px solid white;
-  }
+
 
   /* Contact Page */
 
@@ -347,17 +408,42 @@ p:last-child {
   input, textarea {
     border-style: solid;
     border: none;
-    border-bottom: 2px solid rgb(200, 200, 205);
+    border-bottom: 1px solid rgb(240, 240, 240);
     text-align: center;
     padding: 0.8em;
     display: block;
     width: 100%;
-    font-size: 1rem;
-    vertical-align: top;
+    background-color: transparent;
+
+    
+  }
+
+  textarea, input, button, select { font-family: inherit; font-size: inherit; font-weight: inherit; }
+
+  textarea::placeholder {
+    color: black;
+    font-weight: 200;
+    opacity: 1;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-weight: 200;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    font-weight: 200;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    font-weight: 200;
   }
 
   textarea {
-    border: 2px solid rgb(200, 200, 205);
+    border: 1px solid rgb(240, 240, 240);
   }
   
   input:focus,
@@ -379,6 +465,7 @@ p:last-child {
     padding: 5px;
   }
   
+
   .email-signup input {
     width: 30%;
     display: inline-block;
