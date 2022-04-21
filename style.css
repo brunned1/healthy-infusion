@@ -91,7 +91,8 @@ a:hover {
 }
 
 .arrow {
-  font-size: 1rem;
+  font-size: 0.8rem;
+
 }
 
 
@@ -343,6 +344,10 @@ video {
 .medium-text {
   font-size: 1.3rem;
   font-style: italic;
+}
+
+.services .medium-text {
+  cursor: pointer;
 }
 
 
