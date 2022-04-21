@@ -375,9 +375,21 @@ video {
 
 /* Footer */
 
+.margin-t-lg {
+  margin-top: 10%;
+}
+
+.number {
+  font-size: 1rem;
+}
+.border-top {
+  border: 1px solid rgb(200,200,200);
+}
+
 footer nav a {
   display:block;
   font-size: 0.9rem;
+  text-transform: none;
 }
 
  footer {
@@ -413,7 +425,7 @@ footer nav a {
   input, textarea {
     border-style: solid;
     border: none;
-    border-bottom: 1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(200,200,200);
     text-align: center;
     padding: 0.8em;
     display: block;
@@ -448,7 +460,7 @@ footer nav a {
   }
 
   textarea {
-    border: 1px solid rgb(240, 240, 240);
+    border: 1px solid rgb(200,200,200);
   }
   
   input:focus,

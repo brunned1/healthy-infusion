@@ -11,6 +11,9 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!---           Jquery              -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 
 
@@ -83,21 +86,35 @@
 
 
           <div class="col-6_md-10_sm-12-middle padded-05">
-            <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
+            <form class="grid-center" id="form" method="POST">
               <div class="col-12">
-                <input type="text" name="name" placeholder="Ihr Name">
+                <input type="text" id="name" name="name" placeholder="Ihr Name">
               </div>
               <div class="col-12">
-                <input type="email" name="_replyto" placeholder="Ihre Mail">
+                <input type="email" id="email" name="_replyto" placeholder="Ihre Mail">
               </div>
               <div class="col-12">
-                <input type="tel" name="_telefonnumber" placeholder="Ihre Telefonnummer">
+                <input type="tel" id="contact" name="_telefonnumber" placeholder="Ihre Telefonnummer">
               </div>
               <div class="col-12">
-                <textarea  placeholder="Ihre Nachricht"></textarea>
-                <input type="submit" value="Send" class="button no-bold">
+                <textarea id="message" placeholder="Ihre Nachricht"></textarea>
+                <input type="submit"  id="submit" value="Senden" class="button no-bold">
               </div>
             </form>
+
+            <form id="form">
+              <h3>Contact Form</h3>
+              <p id="returnmessage"></p>
+              <label>Name: <span>*</span></label>
+              <input type="text" id="name" placeholder="Name"/>
+              <label>Email: <span>*</span></label>
+              <input type="text" id="email" placeholder="Email"/>
+              <label>Contact No: <span>*</span></label>
+              <input type="text" id="contact" placeholder="10 digit Mobile no."/>
+              <label>Message:</label>
+              <textarea id="message" placeholder="Message......."></textarea>
+              <input type="button" id="submit" value="Send Message"/>
+              </form>
           </div>
 
           
@@ -146,6 +163,35 @@
         </footer>
 
 
+        <script>
+
+          $(document).ready(function() {
+          $("#submit").click(function() {
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var message = $("#message").val();
+          var contact = $("#contact").val();
+          $("#returnmessage").empty(); // To empty previous error/success message.
+          // Checking for blank fields.
+          if (name == '' || email == '' || contact == '') {
+          alert("Please Fill Required Fields");
+          } else {
+          // Returns successful data submission message when the entered information is stored in database.
+          $.post("contact_form.php", {
+          name1: name,
+          email1: email,
+          message1: message,
+          contact1: contact
+          }, function(data) {
+          $("#returnmessage").append(data); // Append returned message to message paragraph.
+          if (data == "Your Query has been received, We will contact you soon.") {
+          $("#form")[0].reset(); // To reset form fields on success.
+          }
+          });
+          }
+          });
+          });
+        </script>
       
 
 
