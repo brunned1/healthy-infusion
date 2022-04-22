@@ -16,6 +16,8 @@
 
 
 
+        <!----        Javascript-->
+        <script src="/script.js"></script>
 
         <!----          Noto Sans               -->
 
@@ -103,23 +105,23 @@
             </form>
 
 
-            <form method="post" action="/success.html">
-              <label>Email Address</label>
-              <input type="text" name="email">
-            
-              <label>Name</label>
-              <input type="text" name="name">
-            
-              <label>Message</label>
-              <textarea name="message"></textarea>
-            
-              <label>Urgent</label>
-              <input type="checkbox" name="urgent">
-              <input type="text" name="_gotcha" style="display: none;">
-            
-              <input type="submit" value="Send Message">
-            </form>
+            <form id="form">
+              <h3>Contact Form</h3>
+              <p id="returnmessage"></p>
+              <label>Name: <span>*</span></label>
+              <input type="text" id="name" placeholder="Name"/>
+              <label>Email: <span>*</span></label>
+              <input type="text" id="email" placeholder="Email"/>
+              <label>Contact No: <span>*</span></label>
+              <input type="text" id="contact" placeholder="10 digit Mobile no."/>
+              <label>Message:</label>
+              <textarea id="message" placeholder="Message......."></textarea>
+              <input type="button" id="submit" value="Send Message"/>
+              </form>
           </div>
+
+
+
 
           
 
