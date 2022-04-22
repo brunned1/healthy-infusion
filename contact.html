@@ -87,7 +87,7 @@
          
 
 
-          <div class="col-6_md-10_sm-12-middle padded-05">
+          <div id="contact" class="col-6_md-10_sm-12-middle padded-05 margin-t-2 contact">
             <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/shell.js"></script>
             <script>
               hbspt.forms.create({
@@ -96,6 +96,17 @@
               formId: "5b4c7f07-5a88-4411-8c12-b3c58e7a8dc6"
             });
             </script>
+
+            <form id="contact-form" method="post" action="contact-form-handler.php">
+              <input name="name" type="text" class="form-control" placeholder="Ihr Name" required>
+              <br>
+              <input name="email" type="email" class="form-control" placeholder="Ihre Email" required>
+              <br>
+
+              <textarea name="message" class="form-control" placeholder="Ihre Nachricht" row="4" required></textarea>
+
+              <input type="submit" class="form-control submit" value="Senden">
+            </form>
           </div>
 
 
@@ -132,10 +143,10 @@
           <div class="col-2_sm-4_xs-4 padded-1 text-center">
             <h4 class="caps"> Zertifikate </h4>
             <nav>
-              <a href="#"> Badewart </a>
-              <a href="#"> Zertifikat & Kurse </a>
-              <a href="#"> Bewerbung & Erfolge </a>
-              <a href="#"> Visitenkarte </a>
+              <a target="_blank" href="/assets/badewart.pdf"> Badewart </a>
+              <a target="_blank" href="/assets/zertifikate_kurse.pdf"> Zertifikat & Kurse </a>
+              <a target="_blank" href="/assets/bewerbe.pdf"> Bewerbung & Erfolge </a>
+              <a target="_blank" href="/assets/visitenkarte.pdf"> Visitenkarte </a>
             </nav>
           </div>
         
@@ -143,9 +154,9 @@
           <div class="col-2_sm-4_xs-4 padded-1 text-center">
             <h4 class="caps"> Finde mich </h4>
             <nav>
-              <a href="#"> Facebook </a>
-              <a href="#"> Instagram </a>
-              <a href="#"> Youtube </a>
+              <a target="_blank" href="https://www.facebook.com/Alen.Pikon.Barbara.Rainer"> Facebook </a>
+              <a target="_blank" href="https://www.instagram.com/gesunderaufguss"> Instagram </a>
+    
             </nav>
           </div>
   
