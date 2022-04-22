@@ -533,5 +533,9 @@ footer nav a {
   text-transform: none;
 }
 
+.logo {
+  font-size: 1.6rem;
+}
+
 
 }
