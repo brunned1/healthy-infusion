@@ -589,8 +589,13 @@ footer nav a {
   }
 
   .big-text {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: 1.2rem;
+    line-height: 1;
     margin-bottom: 0;
 }
+.date {
+  font-size: 1rem;
+}
+
+
 }
