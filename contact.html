@@ -77,7 +77,7 @@
 
 
           <div class="col-8_md-10 padded-lr">
-            <h3>MELDEN SIE SICH EINFACH BEI MIR</h3>
+            <h3>Melden Sie sich einfach bei mir!</h3>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             <p> <strong> Email: </strong> gesunderaufguss@aon.at </p>
             <p> <strong> Telefonnummer: </strong> +43 676 4241464 </p>
@@ -103,40 +103,30 @@
             </form>
 
 
-
-
-
-
-
-
-            <form id="fcf-form-id" class="fcf-form-class" method="post" action="/contact-form-process.php">
-              <label for="Name" class="fcf-label">Your name</label>
-              <div class="fcf-input-group">
-                  <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-              </div>
-          <div class="fcf-form-group">
-              <label for="Email" class="fcf-label">Your email address</label>
-              <div class="fcf-input-group">
-                  <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-              </div>
-              </div>
-          <div class="fcf-form-group">
-              <label for="Message" class="fcf-label">Your message</label>
-              <div class="fcf-input-group">
-                  <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-              </div>
-          </div>
-          <div class="fcf-form-group">
-              <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-          </div>
-          </form>
-
+            <form method="post" action="/success.html">
+              <label>Email Address</label>
+              <input type="text" name="email">
             
-
-          
-
+              <label>Name</label>
+              <input type="text" name="name">
             
-
+              <label>Message</label>
+              <textarea name="message"></textarea>
+            
+              <label>Urgent</label>
+              <input type="checkbox" name="urgent">
+            
+              <label>Type of Enquiry</label>
+              <input type="radio" name="_subject" value="Sales Enquiry"> Sales
+              <input type="radio" name="_subject" value="General Enquiry"> General
+            
+              <input type="hidden" name="inbox_key" value="contact_inbox">
+              <input type="hidden" name="_to" value="sales@example.com,support@example.com">
+              <input type="hidden" name="_cc" value="sales.tracker@example.com">
+              <input type="text" name="_gotcha" style="display: none;">
+            
+              <input type="submit" value="Send Message">
+            </form>
           </div>
 
           
