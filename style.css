@@ -587,4 +587,10 @@ footer nav a {
   html {
     font-size: 10px;
   }
+
+  .big-text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
 }
