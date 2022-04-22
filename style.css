@@ -4,7 +4,11 @@
   box-sizing:  border-box;
 }
 
-img { max-width: 100%; }
+img {   margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 /* Optional padding to override default gridlex columns */ 
 
@@ -213,9 +217,13 @@ p:last-child {
   
   .bg-image {
     background-color: grey; /* Set a fall-back color while images are loading */ 
-    background-size: cover;
+    background-size: contain;
     background-position: center; 
     background-repeat: no-repeat;
+  }
+
+  .grey-img {
+    filter: saturate(0%);
   }
   
   /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
@@ -295,10 +303,21 @@ p:last-child {
 
 /* Images */
 
+
 .header-img {
     background-image: url(/images/healthy-infusion-1.jpg);
     
 }
+
+.bg-baedercouch {
+  background-image: url(/images/baedercouch.png);
+}
+
+.bg-natural-aufguss {
+  background-image: url(/images/natural_aufguss.png);
+}
+
+
 
 .about-img {
     background-image: url(/images/healthy-infusion-2.jpg);
@@ -386,6 +405,13 @@ video {
   border-top: 1px solid rgb(200,200,200);
 }
 
+.border-bottom {
+  border-bottom: 1px solid rgb(200,200,200);
+}
+.underline {
+  text-decoration: underline;
+}
+
 footer nav a {
   display:block;
   font-size: 1rem;
@@ -414,7 +440,13 @@ footer nav a {
   /* Appointments Page */
 
 
+  .appointment p {
+    font-size: 0.9rem;
+  }
 
+  .appointment h4 {
+    margin-bottom: 1rem;
+  }
   /* Contact Page */
   
 
