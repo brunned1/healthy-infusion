@@ -250,17 +250,6 @@ p:last-child {
     .logo {
         font-size: 2rem;
     }
-    .nav-bar {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-
-        background-color: transparent;
-        opacity: 80%;
-        font-family: 'Cormorant Garamond', serif;
-    
-        z-index: 3;
-    }
 
     header h4 {
         font-size: 2.5rem;
@@ -537,6 +526,11 @@ footer nav a {
 .date {
   font-size: 1.1rem;
   line-height: 1;
+}
+.nav-bar nav a {
+  margin-right: 2.5%;
+  font-size: 1.1rem;
+  text-transform: none;
 }
 
 
