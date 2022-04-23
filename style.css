@@ -478,7 +478,8 @@ footer nav a {
   }
 
   textarea {
-    border: 2px solid rgb(200, 200, 205);
+    border: 1px solid rgb(200, 200, 205);
+    margin-top: 1rem;
   }
   
   input:focus,
@@ -515,7 +516,7 @@ footer nav a {
   form .button {
     width:100%;
     border-bottom: none;
-    text-align: center;
+    text-align: right;
     background-color: transparent;
   }
     @media(max-width:768px) {
