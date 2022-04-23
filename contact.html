@@ -97,10 +97,7 @@
             });
             </script>
 
-            <form class="grid-center" action="https://formkeep.com/f/5134653d661c"
-            accept-charset="UTF-8"
-            enctype="multipart/form-data"
-            method="POST">
+            <form class="grid-center" action="" method="POST">
               <div class="col-12">
                 <input type="text" name="name" placeholder="Ihr Name">
               </div>
@@ -114,6 +111,24 @@
                 <textarea name="message" placeholder="Ihre Nachricht"></textarea>
                 <input type="submit" value="Send" class="button">
               </div>
+            </form>
+
+            <form method="post" action="/success.html">
+              <label>Email Address</label>
+              <input type="text" name="email">
+            
+              <label>Name</label>
+              <input type="text" name="name">
+            
+              <label>Message</label>
+              <textarea name="message"></textarea>
+            
+            
+              <input type="hidden" name="inbox_key" value="contact-form">
+              <input type="hidden" name="_to" value="brunner.daniel01@gmail.com">
+              <input type="text" name="_gotcha" style="display: none;">
+            
+              <input type="submit" value="Send Message">
             </form>
             
 
