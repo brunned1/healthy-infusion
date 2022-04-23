@@ -624,6 +624,9 @@ footer nav a {
 .logo {
   font-size: 1.6rem;
 }
+.phone-center {
+  text-align: center;
+}
 
 
 }
