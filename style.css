@@ -521,6 +521,7 @@ footer nav a {
     border-bottom: none;
     text-align: right;
     background-color: transparent;
+    color: black;
   }
     @media(max-width:768px) {
      .email-signup input {
