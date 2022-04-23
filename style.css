@@ -202,9 +202,7 @@ p:last-child {
 
 /* Background Styles */
 
-.bg-dark {
-  border: 1px solid black; 
-  }
+
 .bg-white {
   background-color: white;
 }
@@ -357,6 +355,10 @@ video {
 }
 
 .services h2:hover {
+  color: #a4ac86;
+}
+
+.hover:hover {
   color: #a4ac86;
 }
 
