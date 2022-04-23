@@ -464,6 +464,7 @@ footer nav a {
   }
 
 
+
   input, textarea {
     border-style: solid;
     background-color: transparent;
@@ -526,6 +527,13 @@ footer nav a {
      }
    }
  
+   input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  box-shadow: none;
+    -webkit-box-shadow: 0 0 0 30px #FDF9F5 inset !important;
+}
  
 
 /* Mobile Styles */
