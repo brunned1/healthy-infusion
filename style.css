@@ -14,6 +14,13 @@ img {   max-width: 100%; }
 
 
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+
 
 
 
@@ -446,8 +453,30 @@ footer nav a {
   }
 
 
+/* Cookies */
 
+#cookie-bar #cookie-bar-main-privacy-link {
+  color: inherit;
+}
+#cookie-bar a:hover, #cookie-bar-prompt-content a:hover {
+  color: inherit;
+}
 
+div #cookie-bar {
+  background-color: rgb(24, 23, 23);
+}
+div #cookie-bar-button a {
+  background-color: none;
+  color: white;
+}
+div #cookie-bar p {
+  color: white;
+}
+
+#cookie-bar #cookie-bar-button {
+  border: none;
+
+}
 
   /* Appointments Page */
 
@@ -588,7 +617,8 @@ input:-webkit-autofill:active{
   .sm-margin-t-1 { margin-top: 5%; }
 
  html {
-   font-size: 12px,
+   font-size: 12px;
+
  }
 
  .services h4 {
